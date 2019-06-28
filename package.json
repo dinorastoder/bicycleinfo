@@ -1,0 +1,22 @@
+{
+  "name": "bicycleinfo",
+  "version": "1.0.0",
+  "description": "Bicycle Inventory Application",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "dino.rastoder@gmail.com",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.1.4"
+  },
+  "dependencies": {
+    "express": "^4.16.4",
+    "moment": "^2.24.0",
+    "path": "^0.12.7",
+    "pug": "^2.0.3"
+  }
+}

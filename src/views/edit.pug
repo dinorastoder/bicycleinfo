@@ -1,0 +1,29 @@
+html
+  head
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    title= id + " - Sykkelkjokkenet"
+
+    link(rel="icon", type="image/png", href="images/favicon.png")
+    link(href="//fonts.googleapis.com/css?family=Raleway:400,300,600", rel="stylesheet", type="text/css")
+
+    link(rel='stylesheet', href='/css/normalize.css')
+    link(rel='stylesheet', href='/css/skeleton.css')
+
+  body
+    div(class="container")
+      div(class="row", style="margin-top: 5%")
+        div(class="three columns" style="margin-bottom: 5%")
+          img(src="/images/sykkelkjokkenet-logo.png", class="five u-max-full-width")
+        div(class="nine columns", style="text-align: center;")
+          h1= "Bicycle Info"
+      div(class="row" style="text-align: center; border: 1px black solid")
+        div(class="column")
+          h2= id
+      div(class="row")
+        div(class="column")
+          label(for="notes")= "Notes"
+          textarea(class="u-full-width", placeholder="Something about bike …", id="notes")= notes
+      div(class="row")
+        div(class="column")
+          p(style="font-size: 60%;font-style: italic;")= "Updated "+moment(updated).format('DD.MMM.YYYY') + " / Added "+moment(added).format('DD.MMM.YYYY')
+      
